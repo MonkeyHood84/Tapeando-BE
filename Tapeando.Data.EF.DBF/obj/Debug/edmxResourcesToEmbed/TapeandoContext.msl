@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="TapeandoContext" />
+  <Alias Key="Target" Value="TapeandoContext.Store" />
+  <EntityContainerMapping CdmEntityContainer="TapeandoContextContainer" StorageEntityContainer="TapeandoContextStoreContainer">
+    <EntitySetMapping Name="tbl_places">
+      <EntityTypeMapping TypeName="TapeandoContext.Places">
+        <MappingFragment StoreEntitySet="tbl_places">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_tapas">
+      <EntityTypeMapping TypeName="TapeandoContext.Tapas">
+        <MappingFragment StoreEntitySet="tbl_tapas">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_temp_test">
+      <EntityTypeMapping TypeName="TapeandoContext.TempTest">
+        <MappingFragment StoreEntitySet="tbl_temp_test">
+          <ScalarProperty Name="EFcol" ColumnName="EFcol" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
